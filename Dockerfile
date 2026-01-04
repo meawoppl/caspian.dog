@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
-COPY index.html /usr/share/nginx/html/index.html
-COPY caspian.jpg /usr/share/nginx/html/caspian.jpg
+COPY --chmod=644 index.html /usr/share/nginx/html/index.html
+COPY --chmod=644 caspian.jpg /usr/share/nginx/html/caspian.jpg
 
 EXPOSE 80
 
